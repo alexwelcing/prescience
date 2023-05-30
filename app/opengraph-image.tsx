@@ -2,8 +2,8 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "Precedent - Building blocks for your Next.js project";
-export const contentType = "image/png";
+export const alt = "Prescience Futuring for fun.";
+export const contentType = "image/jpg";
 
 export default async function OG() {
   const sfPro = await fetch(
@@ -26,8 +26,8 @@ export default async function OG() {
         }}
       >
         <img
-          src={new URL("../public/logo.png", import.meta.url).toString()}
-          alt="Precedent Logo"
+          src={new URL("../public/logo.jpg", import.meta.url).toString()}
+          alt="Prescience"
           tw="w-20 h-20 mb-4 opacity-95"
         />
         <h1
@@ -42,7 +42,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Precedent
+          Prescience
         </h1>
       </div>
     ),
